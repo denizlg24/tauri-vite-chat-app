@@ -4,19 +4,27 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #0f0f0f;
-  background-color: #f6f6f6;
+  --color-background: #dadada;
+  --color-background-secondary: #9a9a9a;
+  --color-text: #4A4A4A;
+  --color-primary: #283642;
+  --color-secondary: #009688;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  background-color: var(--color-background);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #f6f6f6;
-    background-color: #2f2f2f;
+    --color-background: #121212;
+    --color-background-secondary: #333333;
+    --color-text: #FFFFFF;
+    --color-primary: #E91E63;
+    --color-secondary: #9C27B0;
   }
 }
